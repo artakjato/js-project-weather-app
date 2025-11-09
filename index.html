@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Project-weather-app</title>
+</head>
+
+<body>
+
+  <main class="weather-container">
+    <div class="content"></div>
+
+    <section class="current-weather">
+      <h1 class="temp" id="temp"></h1>
+      <p class="city" id="city"></p>
+      <p class="time" id="time"></p>
+      <div class="weather-desc">
+        <p class="desc" id="desc">—</p>
+        <img id="weather-icon" class="sun-pulse" src="./weather_icons/centered/solid/day/01.svg" alt="Weather icon">
+      </div>
+    </section>
+
+    <button class="next-city-btn" id="next-city-btn">
+      <svg class="arrow" width="35" height="35" viewBox="0 0 24 24" fill="none">
+        <path d="M8 5L16 12L8 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <section class="forecast">
+      <div class="days" id="forecast"></div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
